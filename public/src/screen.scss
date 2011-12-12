@@ -1,0 +1,18 @@
+@import "compass/reset";
+@import "compass";
+
+body { background:#eee; }
+
+h1, h2, h3, h4, h5, h6 { font-weight:bold; }
+
+#user-widget {
+  width:300px; margin:40px auto; font-family: Helvetica, Arial, sans-serif;
+  text-align:center; background:#fff;
+  border:1px solid darken(#eee, 10%); color:#333;
+  @include border-radius(5px); padding:15px;
+  @include box-shadow(rgba(0,0,0,.1), 0, 1px, 1px, -1px);
+}
+
+a { color:teal; text-decoration:none;
+  &:hover { color:black; }
+}

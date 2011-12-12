@@ -1,0 +1,11 @@
+{
+   "name": "jasmine-example",
+   "version": "0.0.1",
+   "dependencies": {
+       "express": "2.5.2",
+       "jade": "latest"
+   },
+   "devDependencies": {
+     "jasmine-node": "latest"
+   }
+}
