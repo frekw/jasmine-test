@@ -1,11 +1,13 @@
-var User = require('../public/js/user.js').User
-
+var User
 
 // if running under node.js, load jsdom and jQuery
+// this check isn't enough since AMD loaders might also define require...
 if(typeof require === 'function'){
   global.window = require('jsdom').jsdom().createWindow()
   require('../public/js/jquery.min.js')
   global.$ = global.jQuery = window.jQuery
+  
+  User = require('../public/js/user.js').User
 }
 
 describe('User', function(){
@@ -56,6 +58,5 @@ describe('User', function(){
        $.getJSON.mostRecentCall.args[1]({'username': 'jasmine bdd'})
        expect(callback).toHaveBeenCalledWith('jasmine bdd')
     })
-    
   })
 })

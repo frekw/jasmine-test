@@ -1,3 +1,4 @@
 node_modules
 .monitor
 **/*/.sass-cache
+.DS_Store

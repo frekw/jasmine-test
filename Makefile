@@ -1,7 +1,4 @@
  test:
-	./node_modules/.bin/jasmine-node spec
-
-#test:
-#	node spec-runner.js
+	./node_modules/.bin/jasmine-node spec/
 
 .PHONY: test
