@@ -6,6 +6,7 @@
        "jade": "latest"
    },
    "devDependencies": {
-     "jasmine-node": "latest"
+     "jasmine-node": "latest",
+     "jsdom": "latest"
    }
 }
