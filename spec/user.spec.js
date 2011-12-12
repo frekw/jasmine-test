@@ -31,7 +31,7 @@ describe('User', function(){
       user = new User;
     })
     
-    it('should load load data from', function(){
+    it('should load data via Ajax', function(){
       spyOn($, 'getJSON')
       user.load()
       expect($.getJSON).toHaveBeenCalled()
