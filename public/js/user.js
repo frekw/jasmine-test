@@ -12,7 +12,7 @@ User.prototype = new EventEmitter
 User.prototype.load = function(){
   var self = this;
   $.getJSON('/user', function(data){
-    if(!data && !data.username) throw new Error('Invalid response')
+    if(!data || !data.username) throw new Error('Invalid response')
     self.username = data.username
     self.emit('load', self.username)
   })
